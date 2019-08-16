@@ -1,7 +1,7 @@
 const Exp = require("express")
 var app1 = new Exp();
 app1.set('view engine','ejs');
-app1.use(Express.static(__dirname+"/public"));
+app1.use(Exp.static(__dirname+"/public"));
 app1.get('/',(rq,rs)=>{
     rs.render("add")
 });
